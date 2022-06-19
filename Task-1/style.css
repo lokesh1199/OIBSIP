@@ -38,6 +38,8 @@ table {
 .pre-operand {
     font-size: 2em;
     text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
 .curr-operand {
