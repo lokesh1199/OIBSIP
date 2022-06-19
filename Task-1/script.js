@@ -13,6 +13,7 @@ class Calculator {
             this.currOperand = number
         }
         else {
+            if (number == '.' && this.currOperand.includes('.')) return
             this.currOperand += number
         }
         this.updateDisplay()
