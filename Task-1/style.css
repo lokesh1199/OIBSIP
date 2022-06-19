@@ -1,0 +1,50 @@
+.calculator {
+    background-color: #EBF5FF;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+.calculator {
+    width: 460px;
+}
+
+.span-2 {
+    width: 100%;
+}
+
+button {
+    background-color: #A2D0FA;
+    border-radius: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+.display {
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.pre-operand {
+    font-size: 2em;
+    text-overflow: ellipsis;
+}
+
+.curr-operand {
+    font-size: 3em;
+    word-wrap: break-word;
+}
+
+.curr-operator {
+    font-size: 1.5em;
+}
