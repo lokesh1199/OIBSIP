@@ -10,7 +10,10 @@ class Calculator {
 
     append(number) {
         if (this.currOperand == '0') {
-            this.currOperand = number
+            if (number == '.')
+                this.currOperand += number
+            else
+                this.currOperand = number
         }
         else {
             if (number == '.' && this.currOperand.includes('.')) return
