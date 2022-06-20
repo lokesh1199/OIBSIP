@@ -46,7 +46,12 @@ class Calculator {
         if (this.currOperand == '') {
             if (operator == '−') {
                 this.currOperand += '-'
+            } else if (this.preOperand != '') {
+                this.operator = operator
             }
+        }
+        else if (this.currOperand == '-') {
+            return
         }
         else if (this.operator != '') {
             this.operator = operator
