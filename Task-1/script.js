@@ -43,9 +43,15 @@ class Calculator {
     }
 
     calculate(operator) {
-        if (this.currOperand == '') return
-
-        if (this.preOperand == '') {
+        if (this.currOperand == '') {
+            if (operator == '−') {
+                this.currOperand += '-'
+            }
+        }
+        else if (this.operator != '') {
+            this.operator = operator
+        }
+        else if (this.preOperand == '') {
             this.preOperand = this.currOperand
             this.currOperand = ''
             this.operator = operator
@@ -54,7 +60,6 @@ class Calculator {
             this.preOperand = this.doOperation()
             this.currOperand = ''
             this.operator = operator
-
         }
         this.updateDisplay()
     }
@@ -111,7 +116,6 @@ numbers.forEach((val) => {
 
 operators.forEach((val) => {
     val.addEventListener('click', () => {
-        console.log(val.innerHTML)
         calculator.calculate(val.innerHTML)
     })
 })
