@@ -1,5 +1,9 @@
+body {
+    background-color: #1B2430;
+}
+
 .calculator {
-    background-color: #EBF5FF;
+    background-color: #1B2430;
 }
 
 button {
@@ -16,8 +20,9 @@ button {
 }
 
 button {
-    background-color: #A2D0FA;
+    background-color: #FEFBE7;
     border-radius: 10px;
+    border: 0 5px;
 }
 
 td {
@@ -26,13 +31,15 @@ td {
 
 table {
     border-spacing: 10px;
+    background-color: #A0BCC2;
+    border-radius: 10px;
 }
 
 .display {
     height: 200px;
-    background-color: black;
+    background-color: #06283D;
     border-radius: 10px;
-    color: white;
+    color: #D6D5A8;
 }
 
 .pre-operand {
