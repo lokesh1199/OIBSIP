@@ -53,9 +53,6 @@ class Calculator {
         else if (this.currOperand == '-') {
             return
         }
-        else if (this.operator != '') {
-            this.operator = operator
-        }
         else if (this.preOperand == '') {
             this.preOperand = this.currOperand
             this.currOperand = ''
